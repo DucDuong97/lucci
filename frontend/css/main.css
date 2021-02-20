@@ -29,11 +29,11 @@ body {
     font-family: 'Muli', Arial;
     font-size: 14px;
     word-wrap: break-word;
-    color: #E0E0E0;
+    color: #000;
     overflow: auto;
     /*overflow-x: hidden;*/
     position: relative;
-    background-color: #191919;
+    background-color: #deeaee;
     margin-top: 100px;
 }
 body.e-home-page-body {
@@ -231,6 +231,15 @@ textarea {
 .wow {
     visibility: hidden;
 }
+
+.container-fluid {
+    padding: 0;
+}
+
+.container-fluid .row {
+    margin: auto;
+}
+
 .e-header-mobile-background {
     position: fixed;
     top: 0;
@@ -376,6 +385,7 @@ textarea {
     background: #191919;
     height: 100px;
 }
+
 .e-home-top-banner {
     position: relative;
     height: calc(100vh - 50px);
@@ -406,18 +416,6 @@ textarea {
     position: relative;
     z-index: 7;
     text-align: center;
-}
-.e-home-top-banner .container > button {
-    color: #2FBCED;
-    background: none;
-    border: none;
-    font-size: 18px;
-}
-.e-home-top-banner .container > button:hover {
-    text-decoration: underline;
-}
-.e-home-top-banner .container > button img {
-    margin-left: 10px;
 }
 
 .e-video-popup {
@@ -579,24 +577,49 @@ textarea {
 
 /*__________________________________________HOME PAGE_____________________________________________________*/
 
-.e-home-services {
-    position: relative;
-    z-index: 8;
-    top: -170px;
+.e-home-introduce {
 }
+
+.ehi-content {
+    text-align: right;
+    padding-left: 300px;
+}
+
+.e-home-introduce iframe {
+    display: block;
+    width: 400px;
+    height: 300px;
+    margin-left: 0;
+    margin-right: auto;
+    border: 0;
+}
+
+.e-home-services {
+}
+
+.e-section-header {
+    width: 100%;
+    height: 80px;
+    background-color: #24ABE2;
+}
+
+.e-section-content {
+    padding: 50px 0;
+}
+
 .e-title {
     font-family: Playfair;
-    font-size: 64px;
+    font-size: 40px;
     color: #fff;
     font-weight: bold;
-    margin: 0 0 30px;
     text-align: center;
+    padding-top: 10px;
 }
 .e-description {
     max-width: 680px;
     width: 100%;
     margin: 0 auto 20px;
-    color: #E0E0E0;
+    color: #4d4d4d;
     font-size: 18px;
     line-height: inherit;
     text-align: center;
@@ -606,7 +629,9 @@ textarea {
 }
 .ehs-item {
     display: flex;
+    flex-direction: column;
     height: 360px;
+    margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
     align-items: center;
@@ -616,29 +641,11 @@ textarea {
 .ehs-item > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
 }
-.ehs-item > span {
-    width: 300px;
-    background: rgba(25, 25, 25, 0.8);
-    color: #fff;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    max-width: calc(100% - 30px);
-    font-family: Playfair Display;
-    font-weight: bold;
-    font-size: 24px;
-    transition: all 0.2s linear 0s;
-    min-height: 128px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 4;
-}
+
 .ehs-item:after {
     content: '';
     position: absolute;
@@ -653,9 +660,6 @@ textarea {
     background-color: rgba(0, 0, 0, 0.3);
 }
 .e-home-project {
-    position: relative;
-    z-index: 8;
-    top: -90px;
 }
 .ehp-item:after {
     background-color: rgba(0, 0, 0, 0.6);
@@ -1585,10 +1589,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
-}
-.e-home-top-banner .container > button {
-    font-size: 14px;
-    text-decoration: underline;
 }
 .e-home-services {
     top: 0;
